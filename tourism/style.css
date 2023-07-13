@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+header .logo{
+    color:red;
+    font-weight:700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .menu{
+    position: relative;
+}
+header .menu-items a{
+    position: relative;
+    font-size: 1em;
+    color: red;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 30px;
+    text-decoration:none;
+    transition: 0.5s ease;
+    cursor:pointer;
+}
+header .menu-items a::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left:0;
+    width:0%;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+header .menu-items a:hover::before{
+    width: 100%;
+}
+section{
+    padding:100px 0px;
+}
+.home{
+    position: relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#2696e9;
+}
+.home::before{
+    position: absolute;
+    content:"";
+    z-index:777;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color:rgba(3,96,251,0.3);
+}
+.home video{
+    z-index:000;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit:cover;
+}
+.content{
+    color:yellow;
+    width:70%;
+    margin-top:50px;
+    z-index:888;
+}
+.content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.content p{
+    margin-bottom: 45px;
+    line-height: 1.5;
+    width: 80vh;
+}
+.content a{
+    background-color: #fff;
+    padding: 15px 35px;
+    color: #1680ac;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.5s ease;
+}
+.content a:hover{
+    background-color: #1680ac;
+    color: #fff;
+}
+.media-icon{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.media-icon i{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.media-icon i:not(:last-child){
+    margin-bottom: 20px;
+}
+.media-icon i:hover{
+    transform: scale(1.3);
+}
